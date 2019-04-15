@@ -1,0 +1,9 @@
+<div id="map"></div>
+<% content_for :head do %>
+ <script>
+    document.addEventListener("DOMContentLoaded", function(){
+        initMap();
+    });
+ </script>
+<% end %>
+<%= link_to  "Upload your NSW Local Government Area's disabled parking locations ", new_area_path %>

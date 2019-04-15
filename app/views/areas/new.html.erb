@@ -1,0 +1,13 @@
+<%= form_for @area, url: {action: "create"}, html: {class: "nifty_form"} do |f| %>
+    <div>
+        <%= f.label :name, "Name of region" %>
+        <%= f.text_field :name %> 
+    </div>
+    <div class="form-group"> 
+        <%= f.label :file, "Upload CSV File" %>
+        <%= f.file_field :file, class: 'form-control-file', required: true %>
+    </div>
+    <%= f.button :submit,  class: 'btn btn-primary' %>
+<% end %>
+
+	

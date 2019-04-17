@@ -1,4 +1,4 @@
-<%= form_for @area, url: {action: "create"}, html: {class: "nifty_form"} do |f| %>
+<%= form_with model: @area, local:true do |f| %>
     <div>
         <%= f.label :name, "Name of region" %>
         <%= f.text_field :name %> 
@@ -7,7 +7,7 @@
         <%= f.label :file, "Upload CSV File" %>
         <%= f.file_field :file, class: 'form-control-file', required: true %>
     </div>
-    <%= f.button :submit,  class: 'btn btn-primary' %>
+    <%= f.button :submit %>
 <% end %>
 
 	

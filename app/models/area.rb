@@ -2,7 +2,7 @@ class Area < ApplicationRecord
     
     def self.import(file, name)
         
-        gmaps = GoogleMapsService::Client.new(key:'#{Rails.application.credentials.google_maps_api_key}')
+        gmaps = GoogleMapsService::Client.new(key:Rails.application.credentials.google_maps_api_key)
 
         #Loop through each row of the CSV data adding the data to the database
         CSV.foreach(file.path, headers: true) do |row| 
@@ -27,6 +27,3 @@ class Area < ApplicationRecord
         end
     end
 end
-
-require 'google_maps_service'
-require 'csv'

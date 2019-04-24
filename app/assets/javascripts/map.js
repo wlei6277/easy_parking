@@ -11,6 +11,7 @@ function initMap() {
   // loop through the parking locations in the array placing a marker with a label of the number of available parking space
   // and an event window with the address of that parking space 
   var marker, i;
+  console.log(locations.length)
   for (i = 0; i < locations.length; i++) {
     console.log(i)
     marker = new google.maps.Marker({

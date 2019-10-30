@@ -69,4 +69,4 @@ gem "ruby-json", "~> 1.1"
 
 gem "gon", "~> 6.2"
 
-gem "devise", "~> 4.6"
+gem "devise", "~> 4.7"

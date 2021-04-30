@@ -67,6 +67,6 @@ gem "csv", "~> 3.0"
 
 gem "ruby-json", "~> 1.1"
 
-gem "gon", "~> 6.2"
+gem "gon", "~> 6.4"
 
 gem "devise", "~> 4.6"
